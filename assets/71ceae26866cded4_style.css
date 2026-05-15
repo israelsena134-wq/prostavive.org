@@ -1339,7 +1339,7 @@ p.faq-hd {
     }
 
     .provi_compo_img_wrap_mob {
-        display: none;
+        display: block; visibility: visible;
     }
 }
 
@@ -1541,7 +1541,7 @@ p.faq-hd {
     }
 
     .provi_compo_img_wrap_mob {
-        visibility: hidden;
+        display: block; visibility: visible;
     }
 
     .unique_combination_sngl_box .ucsb_text_hd {
@@ -1786,7 +1786,7 @@ p.faq-hd {
         padding: 32px 0 0 0;
   }
   .provi_compo_img_wrap_mob {
-        display: none;
+        display: block; visibility: visible;
     }
 }
 @media screen and (max-width: 527px){
@@ -1797,7 +1797,7 @@ p.faq-hd {
         padding: 32px 0 0 0;
     }
   .provi_compo_img_wrap_mob {
-        visibility: hidden;
+        display: block; visibility: visible;
     }
 }
 @media screen and (max-width: 527px) and (min-width:481px){
@@ -1807,7 +1807,7 @@ p.faq-hd {
 }
 @media screen and (max-width: 480px) and (min-width:415px) {
     .provi_compo_img_wrap_mob {
-        visibility: hidden;
+        display: block; visibility: visible;
         margin-bottom: 116px;
     }
 }
@@ -1833,7 +1833,7 @@ p.faq-hd {
 }
 @media (max-width:414px) {
   .provi_compo_img_wrap_mob {
-        visibility: hidden;
+        display: block; visibility: visible;
         margin-bottom: 58px;
     }
 }
