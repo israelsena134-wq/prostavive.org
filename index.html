@@ -1427,4 +1427,81 @@ margin: 29px 0;
         passGclid();
       })();
     </script>
-<script data-cf-beacon='{"version":"2024.11.0","token":"c3b4eef9e7764153bcffdc7decd528b8","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' defer="" src="assets/aca73fc574e12740_v833ccba57c9e4d2798f2e76cebdd0.js"></script></body></html>
+<script data-cf-beacon='{"version":"2024.11.0","token":"c3b4eef9e7764153bcffdc7decd528b8","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' defer="" src="assets/aca73fc574e12740_v833ccba57c9e4d2798f2e76cebdd0.js"></script>
+<style>
+    /* Cookie Banner Styles */
+    #cookie-banner {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 400px;
+        background: #ffffff;
+        color: #333;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        z-index: 10000;
+        display: none;
+        font-family: 'Outfit', sans-serif;
+        border: 1px solid #eee;
+    }
+    #cookie-banner p { margin: 0 0 15px 0; font-size: 14px; line-height: 1.4; }
+    #cookie-banner .buttons { display: flex; gap: 10px; }
+    #cookie-banner button {
+        flex: 1;
+        padding: 10px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+    #accept-cookies { background: #1a3c5e; color: white; }
+    #accept-cookies:hover { background: #2a5c8e; }
+    #decline-cookies { background: #f0f0f0; color: #666; }
+</style>
+
+<div id="cookie-banner">
+    <p>We use cookies to ensure you get the best experience on our website and to provide personalized content.</p>
+    <div class="buttons">
+        <button id="accept-cookies">Accept All</button>
+        <button id="decline-cookies">Close</button>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const banner = document.getElementById('cookie-banner');
+        const acceptBtn = document.getElementById('accept-cookies');
+        const declineBtn = document.getElementById('decline-cookies');
+        
+        // Show banner after 2 seconds
+        if (!localStorage.getItem('cookies-accepted')) {
+            setTimeout(() => { banner.style.display = 'block'; }, 2000);
+        }
+
+        // Silent Affiliate Cookie Activation (As recommended by the course)
+        function activateAffiliateCookie() {
+            const affiliateLink = "YOUR_BUYGOODS_AFFILIATE_LINK_HERE"; 
+            if (affiliateLink !== "YOUR_BUYGOODS_AFFILIATE_LINK_HERE") {
+                const img = new Image();
+                img.src = affiliateLink; // Triggers the cookie silently
+            }
+            console.log("Affiliate cookie mechanism triggered.");
+        }
+
+        // Trigger activation regardless of choice
+        activateAffiliateCookie();
+
+        acceptBtn.onclick = function() {
+            localStorage.setItem('cookies-accepted', 'true');
+            banner.style.display = 'none';
+        };
+        declineBtn.onclick = function() {
+            banner.style.display = 'none';
+        };
+    });
+</script>
+</body></html>
