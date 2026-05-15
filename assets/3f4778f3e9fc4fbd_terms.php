@@ -131,7 +131,7 @@
            (the &ldquo;<b>Company</b>&rdquo;). The following terms and conditions, together with any documents they expressly incorporate by reference (collectively, this &ldquo;<b>agreement</b>&rdquo;), govern your access to and use of the ProstaVive websites, including any content, functionality, and services offered on or through the ProstaVive
           
           websites (collectively, the &ldquo;<b>Website</b>&rdquo;).</p>
-          <p>Please read this agreement carefully before you start to use the Website. <b>By using the Website or by clicking to accept or agree to this agreement when this option is made available to you, you accept and agree to be bound and abide by this agreement and the Company&rsquo;s Privacy Policy, found at</b> ../index.htmlprivacy-policy, <b>incorporated by reference</b>. If you do not want to agree to this agreement or the Privacy Policy, you must not access or use the Website.</p>
+          <p>Please read this agreement carefully before you start to use the Website. <b>By using the Website or by clicking to accept or agree to this agreement when this option is made available to you, you accept and agree to be bound and abide by this agreement and the Company&rsquo;s Privacy Policy, found at</b> ..//privacy-policy, <b>incorporated by reference</b>. If you do not want to agree to this agreement or the Privacy Policy, you must not access or use the Website.</p>
           <p>This Website is offered and available to users who are 18-years old or older. By using this Website, you state that you are of legal age to form a binding contract with the Company and meet all the foregoing eligibility requirements, if any. If you do not meet all these requirements, you must not access or use the Website.</p>
           <h3>Changes to the Agreement</h3>
           <p>The Company may revise and update this agreement on one or more occasions in its sole discretion. All changes are effective immediately when the Company posts them and apply to all access to and use of the Website from then on. But any changes to the dispute resolution provisions set out in Governing Law and Jurisdiction will not apply to any disputes for which the parties have actual notice on or before the date the change is posted on the Website.</p>
@@ -346,8 +346,8 @@
 </div>
 </footer>
 
-<script src="../index.htmljs/jquery.js"></script>
-<script src="../index.htmljs/bootstrap.js"></script> <!-- Plugin JavaScript -->
+<script src="..//js/jquery.js"></script>
+<script src="..//js/bootstrap.js"></script> <!-- Plugin JavaScript -->
 <script src="https://display.buygoods.com/v1/disclaimer?id=disclaimer&account_id=8198"></script>        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&amp;display=swap" rel="stylesheet" />
         
 

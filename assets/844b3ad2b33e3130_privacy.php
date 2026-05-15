@@ -417,8 +417,8 @@
 </div>
 </footer>
 
-<script src="../index.htmljs/jquery.js"></script>
-<script src="../index.htmljs/bootstrap.js"></script> <!-- Plugin JavaScript -->
+<script src="..//js/jquery.js"></script>
+<script src="..//js/bootstrap.js"></script> <!-- Plugin JavaScript -->
 <script src="https://display.buygoods.com/v1/disclaimer?id=disclaimer&account_id=8198"></script><script src="js/jquery.js"></script><!-- ClickBank Trust Badge -->
 
 
