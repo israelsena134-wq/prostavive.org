@@ -24,8 +24,6 @@
       margin: 0;
       padding: 0;
     }
-
-
   </style>
   <script async="" src="https://scripts.clarity.ms/0.8.64/clarity.js"></script>
   <script defer="" src="assets/1b3f7c9666ee06c4_sellerhop.js" type="text/javascript"></script>
@@ -137,12 +135,185 @@
     [id*='loading-screen'] {
       display: none !important
     }
-  </style><!-- Flow Tracking: Click_prostavive_fundo_MCC -->
-  <script src="https://flow-tracking-cdn-production.up.railway.app/v2/loader.js"
-    data-track="cba9a28b-82bd-4bb5-8eb9-1763ebdbf4cf" data-endpoint="https://api.flowtrackingtool.com"
-    data-cdn-base="https://flow-tracking-cdn-production.up.railway.app" data-api-base="https://api.flowtrackingtool.com"
-    data-token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0cmFja0lkIjoiY2JhOWEyOGItODJiZC00YmI1LThlYjktMTc2M2ViZGJmNGNmIiwiYXVkIjoiZmxvd3RyazplbWJlZCIsImlzcyI6ImZsb3d0cmsiLCJraWQiOiJjMTZmNTc3NWQyZmFhOTZiIiwiaWF0IjoxNzc4ODg0MDkyLCJleHAiOjE4MTA0MjAwOTJ9.l3qP9GXlsFL9LugwwDhuGBGQnl7gxnsBP5LOxJj9nN0"
-    async crossorigin="anonymous"></script>
+  </style>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- CRO Enhancement Styles -->
+  <style>
+    /* === CRO Premium Layer === */
+    body { font-family: 'Outfit', sans-serif; }
+
+    /* Social Proof Ticker */
+    .cro-ticker-bar {
+      background: linear-gradient(90deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      color: #fff;
+      padding: 9px 0;
+      text-align: center;
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      overflow: hidden;
+      position: relative;
+    }
+    .cro-ticker-bar .ticker-inner {
+      display: inline-flex;
+      align-items: center;
+      gap: 40px;
+      animation: tickerScroll 25s linear infinite;
+      white-space: nowrap;
+    }
+    .cro-ticker-bar .ticker-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .cro-ticker-bar .ticker-dot {
+      width: 8px;
+      height: 8px;
+      background: #4ade80;
+      border-radius: 50%;
+      flex-shrink: 0;
+      animation: pulse-dot 1.5s ease-in-out infinite;
+    }
+    @keyframes tickerScroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.4); }
+    }
+
+    /* Urgency Strip Before Order Section */
+    .cro-urgency-strip {
+      background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+      color: #fff;
+      text-align: center;
+      padding: 14px 20px;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      position: relative;
+      overflow: hidden;
+    }
+    .cro-urgency-strip::before {
+      content: '';
+      position: absolute;
+      top: 0; left: -100%;
+      width: 60%;
+      height: 100%;
+      background: rgba(255,255,255,0.08);
+      transform: skewX(-20deg);
+      animation: shimmer-strip 3s ease-in-out infinite;
+    }
+    @keyframes shimmer-strip {
+      0% { left: -100%; }
+      100% { left: 200%; }
+    }
+    .cro-urgency-strip .strip-icon { margin-right: 6px; }
+
+    /* Trust Badge Row */
+    .cro-trust-row {
+      background: #f8fafc;
+      border-top: 1px solid #e2e8f0;
+      border-bottom: 1px solid #e2e8f0;
+      padding: 14px 0;
+    }
+    .cro-trust-row .trust-inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 28px;
+    }
+    .cro-trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: #374151;
+    }
+    .cro-trust-item .trust-icon {
+      font-size: 18px;
+    }
+
+    /* Buy Now Button Pulse Animation */
+    .buy_now_btn img, .pro-add-cart {
+      transition: transform 0.2s ease, filter 0.2s ease;
+    }
+    .buy_now_btn:hover img, a:hover .pro-add-cart {
+      transform: scale(1.05);
+      filter: brightness(1.05) drop-shadow(0 4px 12px rgba(0,0,0,0.25));
+    }
+    .cro-pulse-btn {
+      animation: cro-pulse 2.5s ease-in-out infinite;
+    }
+    @keyframes cro-pulse {
+      0%, 100% { transform: scale(1); filter: drop-shadow(0 2px 8px rgba(0,0,0,0.15)); }
+      50% { transform: scale(1.04); filter: drop-shadow(0 4px 18px rgba(220, 38, 38, 0.35)); }
+    }
+
+    /* Sticky Bottom CTA (mobile) */
+    .cro-sticky-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(135deg, #16a34a, #15803d);
+      padding: 12px 20px;
+      text-align: center;
+      z-index: 9990;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
+    }
+    .cro-sticky-cta a {
+      color: #fff;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      font-size: 16px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    @media (max-width: 768px) {
+      .cro-sticky-cta { display: block; }
+      body { padding-bottom: 58px; }
+      .cro-trust-item { font-size: 11px; gap: 5px; }
+      .cro-trust-row .trust-inner { gap: 14px; }
+      .cro-urgency-strip { font-size: 13px; padding: 11px 15px; }
+    }
+
+    /* Highlight Most Popular box */
+    #pro-6 {
+      position: relative;
+      transform: scale(1.03);
+      box-shadow: 0 8px 32px rgba(220, 38, 38, 0.25) !important;
+      z-index: 2;
+    }
+    @media (max-width: 991px) {
+      #pro-6 { transform: scale(1); }
+    }
+
+    /* Section Scroll Animation */
+    .cro-fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .cro-fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
 
 <body>
@@ -320,6 +491,21 @@
       transform: scale(1.03);
     }
   </style>
+  <!-- Social Proof Ticker Bar -->
+  <div class="cro-ticker-bar" role="marquee" aria-label="Live activity">
+    <div class="ticker-inner">
+      <span class="ticker-item"><span class="ticker-dot"></span> <strong>John M.</strong> from Texas just ordered 6 Bottles</span>
+      <span class="ticker-item"><span class="ticker-dot"></span> <strong>Robert K.</strong> from Florida ordered 3 Bottles</span>
+      <span class="ticker-item"><span class="ticker-dot"></span> ⭐⭐⭐⭐⭐ Over <strong>98,700+</strong> satisfied customers</span>
+      <span class="ticker-item"><span class="ticker-dot"></span> <strong>David L.</strong> from California just ordered 6 Bottles</span>
+      <span class="ticker-item"><span class="ticker-dot"></span> 🔒 Secure Checkout &mdash; 180-Day Money-Back Guarantee</span>
+      <span class="ticker-item"><span class="ticker-dot"></span> <strong>John M.</strong> from Texas just ordered 6 Bottles</span>
+      <span class="ticker-item"><span class="ticker-dot"></span> <strong>Robert K.</strong> from Florida ordered 3 Bottles</span>
+      <span class="ticker-item"><span class="ticker-dot"></span> ⭐⭐⭐⭐⭐ Over <strong>98,700+</strong> satisfied customers</span>
+      <span class="ticker-item"><span class="ticker-dot"></span> <strong>David L.</strong> from California just ordered 6 Bottles</span>
+      <span class="ticker-item"><span class="ticker-dot"></span> 🔒 Secure Checkout &mdash; 180-Day Money-Back Guarantee</span>
+    </div>
+  </div>
   <header>
     <nav class="navbar">
       <div class="container">
@@ -788,6 +974,21 @@
       <a class="buy_now_btn" href="#homeOrderSec">
         <img alt="Buy Now" class="img-responsive center-block" src="assets/cfc7c8d0ed0a566b_button1.png" />
       </a>
+    </div>
+  </div>
+  <!-- CRO: Urgency Strip -->
+  <div class="cro-urgency-strip">
+    <span class="strip-icon">⚠️</span> WARNING: Due to High Demand, Stock Is Running Low &mdash; Order Now Before It's Gone!
+  </div>
+  <!-- CRO: Trust Badge Row -->
+  <div class="cro-trust-row">
+    <div class="container">
+      <div class="trust-inner">
+        <div class="cro-trust-item"><span class="trust-icon">🛡️</span> 180-Day Money-Back Guarantee</div>
+        <div class="cro-trust-item"><span class="trust-icon">🔒</span> 256-bit SSL Secure Checkout</div>
+        <div class="cro-trust-item"><span class="trust-icon">🚚</span> Free Shipping on 3 & 6 Bottles</div>
+        <div class="cro-trust-item"><span class="trust-icon">🏭</span> Made in USA &mdash; GMP Certified</div>
+      </div>
     </div>
   </div>
   <section class="pro_vive_odr_one_sec">
@@ -1396,6 +1597,10 @@
       </div>
     </div>
   </section>
+  <!-- CRO: Sticky Mobile CTA -->
+  <div class="cro-sticky-cta" id="cro-sticky-cta">
+    <a href="#homeOrderSec" onclick="this.closest('#cro-sticky-cta').style.display='none'">🛒 CLAIM YOUR SPECIAL DISCOUNT &mdash; ORDER NOW</a>
+  </div>
   <!--<section class="ref_sec">
     <div class="container">
         <div class="ref_sec_hd">
@@ -1657,7 +1862,10 @@
     /* Cookie Banner Overlay Modal */
     #cookie-overlay {
       position: fixed;
-      top: 0; left: 0; width: 100%; height: 100%;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       background: rgba(0, 0, 0, 0.6);
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
@@ -1666,6 +1874,7 @@
       align-items: center;
       justify-content: center;
     }
+
     #cookie-modal {
       background: #fff;
       width: 90%;
@@ -1674,25 +1883,29 @@
       border-radius: 15px;
       text-align: center;
       font-family: 'Outfit', sans-serif;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
       animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
+
     #cookie-modal h3 {
       margin-top: 0;
       font-size: 24px;
       color: #1a3c5e;
     }
+
     #cookie-modal p {
       font-size: 16px;
       color: #555;
       line-height: 1.5;
       margin-bottom: 25px;
     }
+
     .cookie-buttons {
       display: flex;
       gap: 15px;
       justify-content: center;
     }
+
     .cookie-btn {
       flex: 1;
       padding: 14px 20px;
@@ -1703,18 +1916,22 @@
       cursor: pointer;
       transition: all 0.2s ease;
     }
+
     .btn-accept {
       background: #10b981;
       color: #fff;
     }
+
     .btn-accept:hover {
       background: #059669;
       transform: translateY(-2px);
     }
+
     .btn-decline {
       background: #ef4444;
       color: #fff;
     }
+
     .btn-decline:hover {
       background: #dc2626;
       transform: translateY(-2px);
@@ -1723,7 +1940,10 @@
     /* Exit Intent Popup */
     #exit-overlay {
       position: fixed;
-      top: 0; left: 0; width: 100%; height: 100%;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       background: rgba(0, 0, 0, 0.8);
       backdrop-filter: blur(5px);
       -webkit-backdrop-filter: blur(5px);
@@ -1732,10 +1952,11 @@
       align-items: center;
       justify-content: center;
     }
+
     #exit-modal {
       background: #fff;
       width: 90%;
-      max-width: 600px;
+      max-width: 800px;
       padding: 0;
       border-radius: 12px;
       overflow: hidden;
@@ -1744,6 +1965,7 @@
       animation: popIn 0.3s ease-out;
       position: relative;
     }
+
     .exit-header {
       background: #ef4444;
       color: #fff;
@@ -1753,15 +1975,18 @@
       text-transform: uppercase;
       letter-spacing: 1px;
     }
+
     .exit-content {
       padding: 25px;
     }
+
     .exit-timer {
       font-size: 20px;
       color: #ef4444;
       font-weight: bold;
       margin: 10px 0;
     }
+
     .progress-bar-container {
       width: 100%;
       height: 12px;
@@ -1770,29 +1995,67 @@
       overflow: hidden;
       margin: 15px 0 25px 0;
     }
+
     .progress-bar {
       height: 100%;
       background: #ef4444;
       width: 100%;
       transition: width 1s linear;
     }
-    .exit-img-wrap {
+
+    .exit-offers-grid {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
       margin-bottom: 20px;
-      cursor: pointer;
-      transition: transform 0.2s ease;
+      align-items: flex-end;
     }
-    .exit-img-wrap:hover {
+
+    .exit-offer-col {
+      flex: 1;
+      max-width: 250px;
+      transition: transform 0.2s ease;
+      cursor: pointer;
+    }
+
+    .exit-offer-col:hover {
       transform: scale(1.03);
     }
-    .exit-img {
-      max-width: 250px;
+
+    .exit-offer-img {
+      width: 100%;
       height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     }
+
+    @media (max-width: 768px) {
+      .exit-offers-grid {
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 5px;
+      }
+
+      .exit-header {
+        font-size: 16px;
+        padding: 10px;
+      }
+
+      .exit-content {
+        padding: 15px;
+      }
+
+      .exit-timer {
+        font-size: 16px;
+      }
+    }
+
     .exit-buttons {
       display: flex;
       flex-direction: column;
       gap: 10px;
     }
+
     .exit-btn {
       padding: 16px;
       border: none;
@@ -1804,12 +2067,25 @@
     }
 
     @keyframes popIn {
-      0% { transform: scale(0.9); opacity: 0; }
-      100% { transform: scale(1); opacity: 1; }
+      0% {
+        transform: scale(0.9);
+        opacity: 0;
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
     }
+
     @media (min-width: 600px) {
-      .exit-buttons { flex-direction: row; }
-      .exit-btn { flex: 1; }
+      .exit-buttons {
+        flex-direction: row;
+      }
+
+      .exit-btn {
+        flex: 1;
+      }
     }
   </style>
 
@@ -1817,7 +2093,8 @@
   <div id="cookie-overlay">
     <div id="cookie-modal">
       <h3>We Value Your Privacy</h3>
-      <p>We use cookies to improve your browsing experience and serve personalized content. Please choose an option below to continue.</p>
+      <p>We use cookies to improve your browsing experience and serve personalized content. Please choose an option
+        below to continue.</p>
       <div class="cookie-buttons">
         <button id="btn-accept" class="cookie-btn btn-accept">Accept</button>
         <button id="btn-decline" class="cookie-btn btn-decline">Reject</button>
@@ -1831,18 +2108,32 @@
       <div class="exit-header">WAIT! Special Offer Before You Go!</div>
       <div class="exit-content">
         <div class="exit-timer">This exclusive discount expires in <span id="timer-display">3:00</span> minutes.</div>
-        <div class="progress-bar-container"><div id="progress-bar" class="progress-bar"></div></div>
-        
-        <a href="#homeOrderSec" id="exit-img-link" onclick="document.getElementById('exit-overlay').style.display='none';">
-          <div class="exit-img-wrap">
-            <img src="assets/dd1c44dc49d343d7_6-bottle.png" class="exit-img" alt="6 Bottles Special Offer">
-          </div>
-        </a>
-
-        <div class="exit-buttons">
-          <button id="exit-accept" class="exit-btn btn-accept" onclick="window.location.href='#homeOrderSec'; document.getElementById('exit-overlay').style.display='none';">I accept this offer</button>
-          <button id="exit-decline" class="exit-btn btn-decline">I decline this offer</button>
+        <div class="progress-bar-container">
+          <div id="progress-bar" class="progress-bar"></div>
         </div>
+
+        <div class="exit-offers-grid">
+          <!-- 1 Bottle -->
+          <a href="https://orders.clickbank.net/?cbfid=57914&cbitems=PROVIVE-001-1&vtid=homed&vvvv=provive"
+            class="exit-offer-col"
+            onclick="document.getElementById('exit-overlay').style.display='none'; document.body.style.overflow='';">
+            <img src="assets/offer-1-bottle.png" class="exit-offer-img" alt="1 Bottle Special Offer">
+          </a>
+          <!-- 6 Bottles -->
+          <a href="https://orders.clickbank.net/?cbfid=57914&cbitems=PROVIVE-006&vtid=homed&vvvv=provive"
+            class="exit-offer-col"
+            onclick="document.getElementById('exit-overlay').style.display='none'; document.body.style.overflow='';">
+            <img src="assets/offer-6-bottles.png" class="exit-offer-img" alt="6 Bottles Special Offer">
+          </a>
+          <!-- 3 Bottles -->
+          <a href="https://orders.clickbank.net/?cbfid=57914&cbitems=PROVIVE-003-1&vtid=homed&vvvv=provive"
+            class="exit-offer-col"
+            onclick="document.getElementById('exit-overlay').style.display='none'; document.body.style.overflow='';">
+            <img src="assets/offer-3-bottles.png" class="exit-offer-img" alt="3 Bottles Special Offer">
+          </a>
+        </div>
+
+
       </div>
     </div>
   </div>
@@ -1863,7 +2154,7 @@
           iframe.style.width = '1px';
           iframe.style.height = '1px';
           document.body.appendChild(iframe);
-          
+
           sessionStorage.setItem('cookies-accepted-session', 'true');
         }
         cookieOverlay.style.display = 'none';
@@ -1879,13 +2170,13 @@
 
       // Exit Intent Logic
       const exitOverlay = document.getElementById('exit-overlay');
-      const exitDecline = document.getElementById('exit-decline');
       let exitTriggered = false;
 
       function showExitPopup() {
         if (!exitTriggered) {
           exitTriggered = true;
           exitOverlay.style.display = 'flex';
+          document.body.style.overflow = 'hidden'; // Lock background scrolling
           startTimer(180); // 3 minutes
         }
       }
@@ -1894,7 +2185,7 @@
       window.history.replaceState({ exitTrap: true }, "", window.location.href);
       window.history.pushState({ exitTrap: true }, "", window.location.href);
 
-      window.addEventListener('popstate', function(event) {
+      window.addEventListener('popstate', function (event) {
         // If event.state is null, it's an anchor link navigation. Ignore it.
         // If event.state has exitTrap, it means the user clicked the Back button!
         if (event.state && event.state.exitTrap) {
@@ -1902,19 +2193,19 @@
             showExitPopup();
             // Push state forward again so they don't leave
             window.history.pushState({ exitTrap: true }, "", window.location.href);
+          } else {
+            // Second back press - hide the popup and allow normal exit
+            exitOverlay.style.display = 'none';
+            document.body.style.overflow = '';
           }
         }
-      });
-
-      exitDecline.addEventListener('click', function() {
-        exitOverlay.style.display = 'none';
       });
 
       function startTimer(durationSeconds) {
         let timer = durationSeconds;
         const display = document.getElementById('timer-display');
         const progressBar = document.getElementById('progress-bar');
-        
+
         const interval = setInterval(function () {
           let minutes = parseInt(timer / 60, 10);
           let seconds = parseInt(timer % 60, 10);
@@ -1932,6 +2223,37 @@
         }, 1000);
       }
     });
+  </script>
+  <!-- CRO: Scroll Animation & Sticky CTA Logic -->
+  <script>
+    (function() {
+      var faders = document.querySelectorAll('.cro-fade-in');
+      if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
+        faders.forEach(function(el) { observer.observe(el); });
+      } else {
+        faders.forEach(function(el) { el.classList.add('visible'); });
+      }
+      var stickyCta = document.getElementById('cro-sticky-cta');
+      var orderSec = document.getElementById('homeOrderSec');
+      if (stickyCta && orderSec) {
+        window.addEventListener('scroll', function() {
+          var rect = orderSec.getBoundingClientRect();
+          if (rect.top < window.innerHeight) {
+            stickyCta.style.display = 'none';
+          } else {
+            stickyCta.style.display = 'block';
+          }
+        }, { passive: true });
+      }
+    })();
   </script>
 </body>
 
